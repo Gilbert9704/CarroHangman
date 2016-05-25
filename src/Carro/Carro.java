@@ -6,14 +6,11 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 
 public class Carro extends JPanel implements ActionListener, KeyListener{
-	
-	private static final long serialVersionUID = 1L;
-	
-	private int x;
+
+    private int x;
     private int y;
     
     private Timer timer;
-    
     
     public Carro(){
     	this.timer = new Timer(5, this);
@@ -48,8 +45,6 @@ public class Carro extends JPanel implements ActionListener, KeyListener{
         repaint();
     }
     
-    
-    //PREGUNTAR COMO MOVER EL POLIGONO
     public void keyPressed(KeyEvent ke){
         switch (ke.getKeyCode()){
             case KeyEvent.VK_LEFT: x -= 10; break;
